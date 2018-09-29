@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1424700288 source:d:\coding\nattee\stack_by_vector\test_stack.cpp
+	<iostream>
+	<stack>
+	<assert.h>
+	"stack.h"
+	"student.h"
+
+1537092772 d:\coding\nattee\stack_by_vector\stack.h
+	<stdexcept>
+	<iostream>
+	<vector>
+
+1537092861 d:\coding\nattee\stack_by_vector\student.h
+	"stack.h"
+	<iostream>
+
