@@ -178,7 +178,7 @@ int main() {
 	CP::list<int> l;
 	l.push_back(9);
 	l.push_back(2);
-	l.push_back(2);
+	l.push_back(3);
 	l.push_back(4);
 	l.push_back(2);
 	l.push_back(7);
@@ -186,7 +186,6 @@ int main() {
 	y.push_back(3);
 	y.push_back(2);
 	y.push_back(1);
-
 	l.replace(2, y);
 	CP::list<int>::iterator it = l.begin();
 	l.print();
