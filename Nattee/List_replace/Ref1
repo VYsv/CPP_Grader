@@ -1,0 +1,16 @@
+void replace(const T& x, list<T>& y) {
+    //write your code here
+    node* it = mHeader->next;
+    size_t siz = mSize;
+    for(int l=0; l<siz; l++){
+        if(it->data == x){ //jer la replace
+            node* lastit(it);
+            for(auto e: y)
+                insert(it, e);
+            erase(lastit);
+            it = lastit->prev;
+        }
+        it = it->next;
+    }
+}
+

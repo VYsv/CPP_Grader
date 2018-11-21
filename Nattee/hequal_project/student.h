@@ -19,7 +19,7 @@ bool CP::priority_queue<T,Comp>::operator==(const CP::priority_queue<T,Comp> &ot
     if(tmp.size() > count){
       return false;
     }
-    if(mData[0] == other.mData[0]) return true;;
+    if(mData[0] == other.mData[0]) return true;
   }
   return false;
 }

@@ -34,10 +34,18 @@ public:
     void insert(int x) {
         insertAt(mRoot, x);
     }
-    bool isSameBinaryTree(Tree& t) {
+        bool isSameBinaryTree(Tree& t) {
         // Insert your code here
-    }
-    // You can also put your code here
+            return isSameCheck(mRoot, t.mRoot);
+        }
+        // You can also put your code here
+        bool isSameCheck(Node* l, Node* r){
+
+            if(l == NULL && r == NULL) return true;
+            if (l->data != r->data) return false;
+            return (isSameCheck(l->left,r->left) && isSameCheck(l->right,r->right));
+
+        }
 
 protected:
     void insertAt(Node*& r, int x) {

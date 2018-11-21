@@ -1,0 +1,8 @@
+void replace(const T& x,list<T>& y){
+for(auto i=begin();i!=end();i++)
+    {
+        if(*i==x){
+            for(T o:y)insert(i,o);erase(i);
+        }
+    }
+}

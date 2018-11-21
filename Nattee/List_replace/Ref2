@@ -1,0 +1,18 @@
+void replace(const T& x, list<T>& y) {
+	for (list_iterator cur = begin(); cur != end(); cur++) {	
+		if (*cur == x) {
+			// Need to put here
+			// Get rid of this node
+			list_iterator n = erase(cur);
+			
+			if (y.mSize > 0) {
+				// Need to insert
+				for (list_iterator yit = y.begin(); yit != y.end(); yit++) {
+					insert(n, *yit);
+				}				
+			}			
+			cur = n;			
+			cur--;
+		}
+	}
+}
