@@ -1,4 +1,4 @@
-    #ifndef __STUDENT_H_
+#ifndef __STUDENT_H_
 #define __STUDENT_H_
 
 #include "priority_queue.h"
